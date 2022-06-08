@@ -1,0 +1,284 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;/*borde total del elemento*/
+
+
+}
+body{
+	
+	font-family: 'Yeseva One', cursive;
+
+}
+nav{
+	position: fixed;/* se queda fijo en la esquina de la pagina */
+	top: 10px;
+	left: 0px;
+	display: flex;
+	justify-content: flex-start;
+
+
+
+
+
+}
+
+.icono{
+	width: 80px;
+	height: auto;
+	color: black;
+	font-size: 30px;
+	text-decoration: none;/* texto sin decoracion , quita el subrayado */
+	/*display: inline-block;/*objetos de manera horizontal */
+	/*animation: moverIzquierda 1s ease-in;****/
+	animation: moverIzquierda 1s ease-in;
+	z-index: 1;
+	
+}
+header{
+background: #136a8a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+height: auto;
+padding: 48px;
+width: 100%;
+
+
+}
+.texto h1{
+
+	font-family: 'Cormorant Garamond', serif;
+	color: black;
+	font-size: 40px;
+	margin-left: : 80px;
+	animation: moverDerecha 1s ease-in;
+
+}
+.texto h2{
+	font-family: 'Abril Fatface', cursive;
+	color: #fff;
+	font-size: 30px;
+	animation: moverIzquierda 1s ease-in;
+
+	/*text-align: center;*/
+}
+.container{
+
+	width:95%;/*container con ancho de 95px*/
+	max-width: 1200px;/*ancho maximo del elemento */
+	display: flex;/*alinea en posicion horizontal */
+	align-items: center;
+	justify-content: :space-around;/*hace distribucion automatica*/
+	margin: auto;
+
+}
+img{
+	display: block;
+	height: 460px;
+	object-fit: cover;/* para que la imagen no pierda tanto la resolucion*/
+	width: auto;
+	animation: arriba 1s ease-in;
+}
+.texto{
+	width: 50%;
+	
+}
+.texto a{
+	display: inline-block;
+	color: black;
+	font-weight: 300;
+	text-decoration: none;
+	margin-top: 30px;
+	border: 1px solid black;
+	width: 150px;
+	border-radius: 3px;
+	text-align: center;
+	padding: 10px 0;
+	animation: arriba 1s ease-in;
+
+}
+.wave{
+	height: 100px;
+	width: 100%;
+	background: #136a8a;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+}
+
+
+.uno{
+clip-path: circle(0% at 0 0);
+}
+.dos{
+clip-path: circle(150% at 0 0);
+}
+.enlaces{
+
+
+	position: fixed;
+	display: flex;
+	top: 0;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+	left: : 0;
+	flex-direction: column;
+	width: 100%;
+	transition: all 1s ease;
+
+	background: #16817a;
+}
+.sub{
+	width: 200px;
+	height: auto;
+}
+
+@keyframes moverIzquierda{
+	0%{
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes moverDerecha{
+	0%{
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes arriba{
+	0%{
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@media screen and (max-width: 1000px){
+	img{
+		height: 380px;
+
+	}
+}
+@media screen and (max-width: 800px){
+	img{
+		height: 380px;
+		
+	}
+	.icono{
+		width: 60px;
+	}
+	.texto h1{
+		font-size: 30px;
+
+	}
+	.texto h2{
+		font-size: 20px;
+	}
+
+}
+@media screen and (max-width: 700px){
+	img{
+		height: 250px;
+		}
+	.icono{
+		width: 40px;
+	}
+	.texto h1{
+		font-size: 40px;
+
+	}
+	.texto h2{
+		font-size: 15px;
+	}
+
+}
+@media screen and (max-width: 450px){
+	.container{
+		width: 100%;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+	.texto{
+		width: 100%;
+		text-align: center;
+	}
+	.icono{
+		width: 40px;
+	}
+	.textos h1{
+		font-size: 60px;
+
+	}
+	.texto h2{
+		font-size: 25px;
+	}
+
+}
+
+@media screen and (max-width: 340px){
+	
+	img{
+		height: 250px;
+
+	}
+	.texto a{
+		width: 120px;
+		
+	}
+	.sub{
+		width: 150px;
+	}
+	.icono{
+		width: 40px;
+	}
+	.texto h1{
+		font-size: 25px;
+
+	}
+	.texto h2{
+		font-size: 15px;
+	}
+
+}
+@media screen and (max-width: 360px){
+	
+	img{
+		height: 250px;
+
+	}
+	.texto a{
+		width: 120px;
+		
+	}
+	.sub{
+		width: 150px;
+	}
+	.icono{
+		width: 40px;
+	}
+	.texto h1{
+		font-size: 15px;
+
+	}
+	.texto h2{
+		font-size: 15px;
+	}
+
+}
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+    display:none;
+}

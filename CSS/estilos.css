@@ -1,0 +1,278 @@
+* {	
+	padding:0;
+	margin:0;
+	border:0;
+	
+}
+body{
+	width:100%;
+	font-family:'robot', sans-serif;
+	 background: linear-gradient(to bottom,
+  #16817a,
+  #588da8,
+  rgba(7,109,150, .45)
+  )
+	
+}
+
+.contenedor{
+	
+	
+	margin:auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contenedor p{
+	font-size:20px;
+	font-family: 'Anton', sans-serif;
+	font-family: 'Cinzel', serif;
+	font-family: 'Courgette', cursive;
+	color:#10375c;
+
+}
+.contenedor h1{
+	font-size:30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.contenedor img{
+	width: 100px;
+	height: 250px;
+}
+.one-thir-con{ 
+	
+	margin: auto;
+	margin-top: 30px;
+	height: 400px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+
+}
+.one-third{
+	margin-bottom:30px;
+	margin-left: 20px;
+	margin: 10px;
+
+	
+	padding:10px 20px 20px 30px;
+	transition:0.3s;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+}
+
+.icon-wrap:hover{
+	box-shadow:0 4x 10px rgba(17, 29, 48, .6);
+}
+.icon-wrap i{
+	font-size:30px;
+	color:white;
+	height:100px,
+
+	padding-top:10px;
+	border-radius:100%;
+}
+
+.one-third p{
+ 	font-family: "Constantia", serif;
+	color:white;
+		display: flex;
+	justify-content: center;
+	align-items: center;	
+
+	
+
+}
+.divisor{
+	background: #fff;
+	height: 50px;
+
+}
+/*realidad aumentad*/
+.one-third-padding{
+
+	margin:auto;
+	overflow: hidden;
+	padding:20px 0;
+	
+	margin-top: 30px;
+	
+}
+
+.one-third-padding img{
+	max-width:400px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin:auto;
+	overflow: hidden;
+	padding:20px 0;
+	display:block;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+
+}
+.one-third-padding h3{
+	
+	font-family: 'Anton', sans-serif;
+	font-family: 'Cinzel', serif;
+	font-family: 'Courgette', cursive;
+	margin:auto;
+		display: flex;
+	justify-content: center;
+	align-items: center;	
+
+}
+.one-third-padding p{
+	margin:auto;
+	font-size:20px;
+	font-family: 'Anton', sans-serif;
+	font-family: 'Cinzel', serif;
+	font-family: 'Courgette', cursive;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+
+}
+
+h1{
+	font-size:50px;
+		display: flex;
+	justify-content: center;
+	align-items: center;	
+
+
+}
+.clearfix-padding>h3{
+	font-family: 'Anton', sans-serif;
+	font-family: 'Cinzel', serif;
+	font-family: 'Courgette', cursive;
+}
+/*header* navegador*/
+header{
+	
+	flex-wrap:wrap;
+	height:200px;
+	background-size:cover;
+	background-position:center;
+	overflow: hidden;
+	background: #fff;
+	
+}
+header nav{
+	display:flex;
+	height:80px;
+	justify-content:space-between;
+	border-bottom:1px solid transparent;
+	box-shadow: 1px 1px 10px 0 rgba(0,0,0, .2);
+	transition:ease-in-out 0.5s;
+}
+.hamburguer{
+	display:none;
+}
+
+.enlaces{
+	display:flex;
+	height:100%;
+	width:60%;
+	justify-content: space-around;
+	align-items:center;
+}
+.enlaces a{
+	font-family: 'Anton', sans-serif;
+	font-size:20px;
+
+	
+	border-top:1px solid transparent;
+	border-bottom:1px solid transparent;
+	padding:4px 0;
+	transition:0.7s ease-out;
+	color:#fff;
+	text-decoration:none;
+}
+.enlaces a:hover, .active{
+	border-top:5px solid  #007892;
+	border-bottom:5px solid #00a1ab ;
+
+}
+nav{
+	background:  #16817a;
+}
+nav .logo{
+
+	height:100%;
+	
+	margin-left:20px;
+}
+nav .logo img{
+	object-fit:cover;
+	height:inherit;
+	
+}
+
+.contenido-header{
+	text-align:center;
+	color:black;
+	margin-top:40px;
+	animation:ease-in animat 3s;
+	text-align:left;
+}
+
+.header .textos h1{
+		animation:ease-in animat 2s;
+		align-items:center;	
+}
+.contenido-header img{
+	width:400px;
+	padding:10px;
+	animation:ease-in animat 2s;
+	display:block;
+	margin:auto;
+}
+
+.enlaces uno-fixed{
+	position:fixed;
+	z-index:1000;
+	top:0;
+	width:100%;
+	max-width:10000px;
+}
+/*footer */
+
+footer{
+
+	background:black;
+	padding:20px;
+	overflow:hidden;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+	transition:all ease-in-out 3s;
+}
+
+footer ul i{
+	color:white;
+	width:100px;
+	height:30px;
+	line-height:60px;
+	cursor:pointer;
+	margin-top:10px;
+	text-align:center;
+	transition:all ease-in-out 0.3s;
+	margin-right:50px;
+}
+footer ul i:hover{
+
+	color:#0CA6EE;
+	font-size:50px;
+}
+@keyframes animat{
+	0%{
+		transform:scale(0);
+	}100%{
+		transform:scale(1);
+	}
+
+}
